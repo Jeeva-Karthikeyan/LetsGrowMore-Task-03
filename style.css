@@ -1,0 +1,179 @@
+body {
+    background-image: url(views/writing.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+/* Reset and general styling */
+* {
+    outline: none;
+    box-sizing: border-box; 
+}
+
+/* header section */
+
+h1 {
+  font-size: 33px;
+  text-align: center;
+  padding: 15px;
+}
+
+.header {
+  background-color: rgb(226, 119, 19,0.8);
+  color: rgb(249, 249, 249);
+  font-weight: bolder;
+  margin-top: 0px;
+}
+
+h2  {
+    color: whitesmoke;
+    border: 1px solid white;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+
+.container {
+  font-family: cursive;
+}
+
+/* form data */
+.form {
+  padding: 37px 37px 0px;
+  background-color :rgba(249, 249, 249, 0.3);
+  color: black;
+}
+
+.checkbox-inline{
+  padding: 5px 6px;
+}
+
+/* table details */
+
+#tableDetails {
+    border-width: 2px;
+    padding:0px
+}
+
+#tableResult
+{
+    background-color: rgb(226, 119, 19);
+    color:rgb(255, 255, 251);
+}
+#vertical {
+    border-left: 3px solid dimgray;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    text-align: right;
+}
+
+/* image */
+#image {
+    width: 150px;
+}
+
+img {
+  width: 115px;
+  height: 125px;
+}
+
+
+/* Call-to-Action Button */
+.d-1 {
+    --c: #1095c1; /* the color */
+    --b: .1em;    /* border length*/
+    --d: 20px;    /* the cube depth */
+    --h: 1.2em;   /* the height */
+    
+    --_s: calc(var(--d) + var(--b));
+  
+    line-height: var(--h);
+    color:white;
+    border: solid #0000;
+    overflow: hidden;
+    border-width: var(--b) var(--b) var(--_s) var(--_s);
+    background-color: black;
+    background:
+      linear-gradient(var(--c) 0 0) 100% 100%
+       /101% var(--_p,0%) no-repeat,
+      conic-gradient(at left var(--d)  bottom var(--d),
+        #977d2600 90deg, rgb(255 255 255 /0.3) 0 225deg,rgb(255 255 255 /0.6) 0) border-box,
+      conic-gradient(at left var(--_s) bottom var(--_s),
+        #1095c1 90deg,var(--c) 0) 0 100%/calc(100% - var(--b)) calc(100% - var(--b))  border-box;
+    transform: translate(calc(var(--d)/-1),var(--d));
+    clip-path: 
+      polygon(
+       var(--d) 0%, 
+       var(--d) 0%, 
+       100% 0%, 
+       100% calc(100% - var(--d)),
+       100% calc(100% - var(--d)),
+       var(--d) calc(100% - var(--d))
+      );
+    transition: 0.5s;
+  }
+  .d-1:hover {
+    transform: translate(0,0);
+    clip-path: 
+      polygon(
+       0% var(--d), 
+       var(--d) 0%, 
+       100% 0%, 
+       100% calc(100% - var(--d)), 
+       calc(100% - var(--d)) 100%, 
+       0% 100%
+     );
+    --_t: var(--h);
+    --_p: 105%;
+  }
+  
+  .d-2 {
+    --c: #CC333F; /* the color */
+    --b: .1em;    /* border length*/
+    --d: 20px;    /* the cube depth */
+    --h: 1.2em;   /* the height */
+    
+    --_s: calc(var(--d) + var(--b));
+    color: white;
+    border: solid #0000;
+    overflow: hidden;
+    border-width: var(--b) var(--_s) var(--_s) var(--b);
+    background:
+      linear-gradient(var(--c) 0 0) -1px 100%
+       /101% var(--_p,0%) no-repeat,
+      conic-gradient(from -90deg at right var(--d)  bottom var(--d),
+        #0000 90deg, rgb(255 255 255 /0.3) 0 225deg,rgb(255 255 255 /0.6) 0) border-box,
+      conic-gradient(at right var(--_s) bottom var(--_s),
+        var(--c) 270deg,#CC333F 0) 100% 100%/calc(100% - var(--b)) calc(100% - var(--b))  border-box;
+    transform: translate(var(--d),var(--d));
+    clip-path: 
+      polygon(
+        0% 0%,
+        calc(100% - var(--d)) 0%,
+        calc(100% - var(--d)) 0%,
+        calc(100% - var(--d)) calc(100% - var(--d)),
+        0 calc(100% - var(--d)),
+        0 calc(100% - var(--d))
+      );
+    transition: 0.5s;
+  }
+  .d-2:hover {
+    transform: translate(0,0);
+    clip-path: 
+      polygon(
+        0% 0%,
+        calc(100% - var(--d)) 0%,
+        100% var(--d),
+        100% 100%,
+        var(--d) 100%,
+        0 calc(100% - var(--d))
+      );
+    --_t: var(--h);
+    --_p: 105%;
+  }
+  
+  
